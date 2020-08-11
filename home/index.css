@@ -1,6 +1,34 @@
 body{
-    min-height: 1fr;
+    min-height: 100vh;
     margin: 0;
     display: grid;
-    grid-template-rows: 100px 1fr 1fr;
+    grid-template-columns: 300px 1fr;
+    grid-template-rows: 100px 1fr;
+    grid-template-areas: 
+    'cabe cabe'
+    'menu conteudo'
+    ;
+}
+
+.cabe{
+    background-color: rgb(128, 245, 128);
+    color: black;
+    text-align: center;
+    grid-area: cabe;
+}
+
+.conteudo{
+    grid-area: conteudo;
+    display: grid;
+    background-color: rgb(147, 147, 236);
+}
+.conteudo div{
+    border: solid 1px;
+    display: flex;
+    
+}
+
+.menu {
+    grid-area: menu;
+    background-color: rgb(27, 27, 27);
 }
